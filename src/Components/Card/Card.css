@@ -1,0 +1,52 @@
+/* Card.css */
+
+.card {
+    width: 20rem; /* Increase width for better content alignment */
+    height: auto; /* Allow height to adjust based on content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff; /* Background color */
+    border: 2px solid #ddd; /* Border */
+    border-radius: 15px; /* Border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    padding: 1.5rem; /* Padding */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Move up on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+  }
+  
+  .card > img {
+    width: 5rem; /* Adjust image size */
+    margin-bottom: 1rem; /* Adjust margin */
+  }
+  
+  .card > span {
+    font-size: 1.2rem; /* Adjust font size */
+    color: #333; /* Text color */
+    margin-bottom: 0.5rem; /* Adjust margin */
+  }
+  
+  .card > span:nth-of-type(2) {
+    color: #666; /* Secondary text color */
+    font-size: 1rem; /* Adjust font size */
+  }
+  
+  .c-button {
+    background-color: #5290fd; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Border radius */
+    padding: 0.5rem 1rem; /* Padding */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s ease; /* Transition */
+  }
+  
+  .c-button:hover {
+    background-color: #407dc2; /* Darker background color on hover */
+  }
+  

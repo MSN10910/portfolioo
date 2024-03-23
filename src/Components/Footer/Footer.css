@@ -1,0 +1,53 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: f8f9fa;
+    padding: 3rem 0;
+  }
+  
+  .f-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+  }
+  
+  .f-icons > * {
+    transform: scale(0.7);
+  }
+  
+  .f-icons > *:hover {
+    cursor: pointer;
+  }
+  
+  /* Media Query for devices with max-width of 480px */
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 2rem 0; /* Reduced padding for smaller screens */
+  }
+
+  .f-content {
+    flex-direction: column; /* Stack content vertically for smaller screens */
+    text-align: center; /* Center align content for smaller screens */
+  }
+
+  .f-icons {
+    margin-top: 1rem; /* Adjusted margin-top for smaller screens */
+  }
+
+  .f-icons > * {
+    margin-right: 1rem; /* Adjusted margin-right for smaller screens */
+  }
+}
+
+/* Media Query for devices with max-width of 720px */
+@media screen and (max-width: 720px) {
+  .f-content {
+    gap: 1rem; /* Reduced gap between elements for medium screens */
+  }
+}
+
+/* Media Query for devices with max-width of 1440px */
+@media screen and (max-width: 1440px) {
+  /* Add your styles for screens up to 1440px if needed */
+}

@@ -1,0 +1,112 @@
+.contact-form {
+  background-color: #f8f9fa;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form.dark {
+  background-color: #333;
+  color: #fff; /* Set text color to white in dark mode */
+}
+
+.contact-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-heading h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-heading p {
+  font-size: 1rem;
+}
+
+.contact-form-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-fields input,
+.contact-form-fields textarea {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  color: #333; /* Set text color to dark gray by default */
+}
+
+.contact-form-fields input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form-fields input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.success-message {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  color: green;
+}
+
+.button {
+  height: 60px;
+  width: 100px;
+}
+
+/* Media Query for devices with max-width of 480px */
+@media screen and (max-width: 480px) {
+  .contact-heading h2 {
+    
+    font-size: 2rem; /* Adjusted font size for smaller screens */
+  }
+  .contact-form {
+    margin-top: -11rem;
+  }
+
+  .contact-heading p {
+    font-size: 0.9rem; /* Adjusted font size for smaller screens */
+  }
+
+  .contact-form-fields input,
+  .contact-form-fields textarea {
+    padding: 0.5rem; /* Reduced padding for smaller screens */
+    font-size: 0.9rem; /* Adjusted font size for smaller screens */
+  }
+}
+
+/* Media Query for devices with max-width of 720px */
+@media screen and (max-width: 720px) {
+  .contact-heading h2 {
+    font-size: 2.3rem; /* Adjusted font size for medium screens */
+  }
+
+  .contact-heading p {
+    font-size: 1rem; /* Adjusted font size for medium screens */
+  }
+
+  .contact-form-fields input,
+  .contact-form-fields textarea {
+    font-size: 1rem; /* Adjusted font size for medium screens */
+  }
+
+  .button {
+    width: 120px; /* Adjusted button width for medium screens */
+  }
+}
+
+/* Media Query for devices with max-width of 1440px */
+@media screen and (max-width: 1440px) {
+  /* Add your styles for screens up to 1440px if needed */
+}

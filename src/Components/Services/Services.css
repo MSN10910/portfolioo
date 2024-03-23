@@ -1,0 +1,137 @@
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  margin-top: 9rem;
+  margin-bottom: 8rem;
+}
+
+.services.dark-mode {
+  color: white; /* Switch text color to white in dark mode */
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  max-width: 50%;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.description {
+  color: var(--gray);
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--orange);
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ff9900;
+}
+
+.emoji {
+  width: 10rem;
+  height: auto;
+  margin-left: 3rem;
+}
+
+.right-side {
+  width: 50%;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Media Query for devices with max-width of 480px */
+@media screen and (max-width: 480px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+    margin-top: -7rem; /* Reduced margin-top */
+    margin-bottom: 6rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .left-side {
+    order: 1; /* Change the order of the left side to be first */
+    margin-bottom: 2rem; /* Added margin-bottom to create space between sections */
+  }
+
+  .content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .right-side {
+    order: 2; /* Change the order of the right side to be second */
+  }
+
+  .button {
+    margin-top: 1rem; /* Adjust the margin as needed */
+  }
+}
+
+/* Media Query for devices with max-width of 720px */
+@media screen and (max-width: 720px) {
+  .services {
+    padding: 0 2rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .emoji {
+    width: 8rem;
+  }
+}
+
+/* Media Query for devices with max-width of 1440px */
+@media screen and (max-width: 1440px) {
+  .services {
+    padding: 0 4rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+
+  .emoji {
+    width: 12rem;
+  }
+}

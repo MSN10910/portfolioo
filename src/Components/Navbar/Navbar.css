@@ -1,0 +1,77 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.navbar.dark-mode {
+  background-color: #333; /* Change to dark background color */
+}
+
+.navbar.light-mode {
+  background-color: #fff; /* Change to light background color */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 70px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 20px;
+  color: #333; /* Change brand color for dark mode */
+}
+
+.navbar.dark-mode .navbar-brand {
+  color: #fff; /* Change brand color for dark mode */
+}
+
+.navbar-right .navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-item {
+  margin-right: 20px;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.navbar-item a:hover {
+  color: #f57c00;
+}
+
+.navbar.dark-mode .navbar-item a {
+  color: #fff; /* Change link color for dark mode */
+}
+
+.navbar.dark-mode .navbar-item a:hover {
+  color: #f57c00; /* Change link color on hover for dark mode */
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-item {
+    display: none;
+  }
+}
