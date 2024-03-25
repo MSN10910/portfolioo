@@ -27,39 +27,45 @@ const Intro = () => {
           setTypedName(name[0]); // Reset to display only the first letter
         }, 2000); // Adjust the delay before switching to the next word
       }
-    }, 100); // Adjust the interval for typing speed
+    }, 250); // Adjust the interval for typing speed
     return () => clearInterval(interval);
   }, [isDeveloper]);
-  
-  
-  
 
   return (
-    <div className="intro" id='home'>
+    <div className="intro" id="home">
       <div className="i-left">
-      <div className="i-name">
-      <span style={{ color: darkMode ? "red" : "" }}>Web</span>{" "}
-      <span style={{ color: darkMode ? "red" : "" }}>{typedName}</span>
-      <div>
-        <span style={{ color: darkMode ? "white" : "" }}>Hi, I'm Wambui Joadin</span>
-      </div>
-      <p style={{ color: darkMode ? "white" : "" }} className="description">
-        As a DevOps Engineer, I specialize in crafting dynamic and responsive web experiences.
-      </p>
-      <p style={{ color: darkMode ? "white" : "" }} className="description">
-        My expertise lies in the MERN stack, including MongoDB, Express.js, React.js, and Node.js.
-      </p>
-    </div>
-    
-
-       
+        <div className="i-name">
+          <span style={{ color: darkMode ? "red" : "" }}>Web</span>{" "}
+          <span style={{ color: darkMode ? "red" : "" }}>{typedName}</span>
+          <div>
+            <span style={{ color: darkMode ? "white" : "" }}>
+              Hi, I'm Wambui Joadin
+            </span>
+          </div>
+          <p style={{ color: darkMode ? "white" : "" }} className="description">
+            As a Web Developer, I specialize in crafting dynamic and responsive
+            web experiences.
+          </p>
+          <p style={{ color: darkMode ? "white" : "" }} className="description">
+            My expertise lies in the MERN stack, including MongoDB, Express.js,
+            React.js, and Node.js.
+          </p>
+        </div>
 
         <div className="i-icons">
-        <a href="https://github.com/MSN10910" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/MSN10910"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithub color={darkMode ? "white" : "black"} size={32} />
           </a>
 
-          <a href="https://www.linkedin.com/in/maina-joadin-2a17582b1/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/maina-joadin-2a17582b1/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaLinkedin color={darkMode ? "white" : "black"} size={32} />
           </a>
         </div>

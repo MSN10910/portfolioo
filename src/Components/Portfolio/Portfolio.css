@@ -4,16 +4,24 @@
   justify-content: center;
   flex-direction: column;
   height: 70vh;
-}
 
-.portfolio.dark-mode {
-  /* Add dark mode styles here */
 }
-
-.portfolio-heading {
+/* heading */
+.portfolio span:nth-of-type(1) {
   color: var(--black);
   font-size: 2rem;
   font-weight: bold;
+}
+
+.portfolio span:nth-of-type(2) {
+  color: var(--orange);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* slider */
+.portfolio .swiper{
+    overflow: visible!important;
 }
 
 .portfolio-slider {
@@ -21,45 +29,41 @@
   width: 100%;
 }
 
-.project-link {
-  text-decoration: none;
-  color: inherit; /* Inherit color */
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
+.portfolio-slider .swiper-slide {
+  width: 20rem;
 }
-
-.project-link:hover {
-  color: var(--dark-orange);
+.portfolio img {
+  width: 19rem;
+  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
+  border-radius: 19px;
 }
 
 /* Media Query for devices with max-width of 480px */
 @media screen and (max-width: 480px) {
-  .portfolio-heading {
-    margin-top: -19rem;
-    font-size: 1.5rem; /* Adjusted font size for smaller screens */
+  .portfolio {
+    margin-top: -12rem; /* Reduce margin top */
+    margin-bottom: 10rem; /* Increase margin bottom */
   }
 
   .portfolio-slider {
-    margin-top: 2rem; /* Reduced margin-top for smaller screens */
-  }
-
-  .project-link {
-    font-size: 1rem; /* Adjusted font size for smaller screens */
+    margin-top: 1rem; /* Adjust margin top for the slider */
   }
 }
 
-/* Media Query for devices with max-width of 720px */
-@media screen and (max-width: 720px) {
-  .portfolio-heading {
-    font-size: 1.8rem; /* Adjusted font size for medium screens */
-  }
-
-  .project-link {
-    font-size: 1.1rem; /* Adjusted font size for medium screens */
+/* Media Query for devices with max-width of 780px */
+@media screen and (max-width: 780px) {
+  .portfolio-slider .swiper-slide {
+    width: calc(50% - 1rem);
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
   }
 }
 
-/* Media Query for devices with max-width of 1440px */
-@media screen and (max-width: 1440px) {
-  /* Add your styles for screens up to 1440px if needed */
+/* Media Query for devices with max-width of 1040px */
+@media screen and (max-width: 1040px) {
+  .portfolio-slider .swiper-slide {
+    width: calc(33.3333% - 1rem);
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
 }

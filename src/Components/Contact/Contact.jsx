@@ -44,7 +44,7 @@ const Contact = () => {
   return (
     <div className={`contact-form ${darkMode ? "dark" : ""}`} id='contact'>
       <div className="contact-heading">
-        <h2 >Get in Touch</h2>
+        <h2 style={{ color: darkMode ? "red" : "" }}>Get in Touch</h2>
         <p>Contact me for inquiries or just to say hi!</p>
       </div>
       <form onSubmit={handleSubmit} className="contact-form-fields">

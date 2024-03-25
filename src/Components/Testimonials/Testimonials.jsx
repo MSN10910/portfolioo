@@ -23,7 +23,7 @@ const Testimonials = () => {
   return (
     <div className={`t-wrapper ${darkMode ? "dark" : ""}`} id="testimonials">
       <div className="t-heading">
-        <span style={{ color: darkMode ? "red" : "" }}>Testimonials</span>
+        <span style={{ color: darkMode ? "red" : "#333" }}>Testimonials</span>
         <div
           className="blur t-blur1"
           style={{ background: "var(--purple)" }}

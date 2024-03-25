@@ -1,56 +1,63 @@
+/* Update styles to create a modern-looking about me section */
+
 .services {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3rem;
+  padding: 4rem 3rem;
   margin-top: 9rem;
   margin-bottom: 8rem;
+  background-color: #f9f9f9; /* Light background */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .services.dark-mode {
-  color: white; /* Switch text color to white in dark mode */
+  background-color: #333; /* Dark background */
 }
 
 .left-side {
   display: flex;
   align-items: center;
 }
-
 .content {
-  max-width: 50%;
+  max-width: 80%; /* Adjusted width for better readability */
+  margin: 0 auto; /* Center align the content */
+  text-align: center; /* Center align text */
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Increased font size */
   font-weight: bold;
-  color: var(--black);
+  margin-bottom: 1rem; /* Added margin for spacing */
 }
 
 .description {
-  color: var(--gray);
-  font-size: 1.2rem;
-  margin-top: 1rem;
+  font-family: "Roboto", sans-serif; /* Beautiful font family */
+  font-size: 0.7rem; /* Increased font size */
+  color: #444; /* Darkened text color for better contrast */
+  line-height: 1.6; /* Improved line height for readability */
 }
 
 .button {
   display: inline-block;
-  padding: 0.8rem 2rem;
+  padding: 1rem 2.5rem;
   border: none;
   border-radius: 5px;
-  background-color: var(--orange);
+  background-color: #ff9800;
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .button:hover {
-  background-color: #ff9900;
+  background-color: #ffb74d;
 }
 
 .emoji {
-  width: 10rem;
+  width: 12rem;
   height: auto;
   margin-left: 3rem;
 }
@@ -65,47 +72,37 @@
   gap: 2rem;
 }
 
-/* Media Query for devices with max-width of 480px */
-@media screen and (max-width: 480px) {
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
   .services {
     flex-direction: column;
-    align-items: center;
-    padding: 0 1rem;
-    margin-top: -7rem; /* Reduced margin-top */
-    margin-bottom: 6rem;
-  }
-
-  .title {
-    font-size: 1rem;
+    padding: 3rem 2rem;
   }
 
   .left-side {
-    order: 1; /* Change the order of the left side to be first */
-    margin-bottom: 2rem; /* Added margin-bottom to create space between sections */
-  }
-
-  .content {
-    max-width: 100%;
+    order: 2;
     text-align: center;
   }
 
   .right-side {
-    order: 2; /* Change the order of the right side to be second */
+    order: 1;
+    margin-top: 2rem;
   }
 
-  .button {
-    margin-top: 1rem; /* Adjust the margin as needed */
+  .emoji {
+    width: 10rem;
   }
 }
 
-/* Media Query for devices with max-width of 720px */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 480px) {
   .services {
-    padding: 0 2rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
   }
 
   .title {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .description {
@@ -114,24 +111,5 @@
 
   .emoji {
     width: 8rem;
-  }
-}
-
-/* Media Query for devices with max-width of 1440px */
-@media screen and (max-width: 1440px) {
-  .services {
-    padding: 0 4rem;
-  }
-
-  .title {
-    font-size: 3rem;
-  }
-
-  .description {
-    font-size: 1.2rem;
-  }
-
-  .emoji {
-    width: 12rem;
   }
 }

@@ -2,6 +2,10 @@ import React, { useContext } from "react";
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import Sidebar from "../../img/sidebar.png";
+import Estate from "../../img/Estate.png";
+import Ecommerce from "../../img/ecommerce.png";
+import HOC from "../../img/travel1.png";
 import { themeContext } from "../../context";
 
 const Portfolio = () => {
@@ -9,11 +13,12 @@ const Portfolio = () => {
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className={`portfolio ${darkMode ? 'dark-mode' : ''}`} id="Portfolio">
-      {/* Heading */}
-      <h2 style={{ color: darkMode ? "red" : "" }} className="portfolio-heading">Recent Projects</h2>
+    <div className="portfolio" id="portfolio">
+      {/* heading */}
+      <span style={{ color: darkMode ? "white" : "" }}></span>
+      <span style={{ color: darkMode ? "red" : "" }}>Portfolio</span>
 
-      {/* Slider */}
+      {/* slider */}
       <Swiper
         spaceBetween={30}
         slidesPerView={3}
@@ -21,23 +26,23 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-          <a href="https://fitness-smoky-delta.vercel.app" className="project-link" target="_blank" rel="noopener noreferrer">
-            <span>Fitness site</span>
+          <a href="https://fitness-smoky-delta.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src={Sidebar} alt="Project 1" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a href="https://github.com/MSN10910/ecommerce" className="project-link" target="_blank" rel="noopener noreferrer">
-            <span>E-commerce Project</span>
+          <a href="https://estatereal.pages.dev/" target="_blank" rel="noopener noreferrer">
+            <img src={Estate} alt="Project 2" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a href="https://github.com/MSN10910/Real-Estate" className="project-link" target="_blank" rel="noopener noreferrer">
-            <span>Real Estate</span>
+          <a href="https://github.com/MSN10910/ecommerce" target="_blank" rel="noopener noreferrer">
+            <img src={Ecommerce} alt="Project 3" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a href="https://github.com/MSN10910/Bookstore-MERN" className="project-link" target="_blank" rel="noopener noreferrer">
-            <span>Bookstore</span>
+          <a href="https://travel-1-ten.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src={HOC} alt="Project 4" />
           </a>
         </SwiperSlide>
       </Swiper>
